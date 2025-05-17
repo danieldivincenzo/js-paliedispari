@@ -1,0 +1,1 @@
+const parola = prompt("Inserisci una parola")
