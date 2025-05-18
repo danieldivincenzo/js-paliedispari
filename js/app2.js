@@ -16,4 +16,13 @@ function getRandomNumber(min, max) {
 }
 
 const numeroComputer = getRandomNumber(1, 5)
+const sommaNumeri = numeroUtente + numeroComputer
+
+function isEven(num) {
+    if (num % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
 
