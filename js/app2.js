@@ -4,3 +4,7 @@
 // Sommo i 2 numeri
 // Stabilisco se la somma è  pari o dispari
 // Se il valore della somma corrisponde a ciò che  ha inserito l'utente, questo ha vinto, altrimenti ha perso
+
+const pariDispari = prompt("Decidi se pari o dispari")
+const numeroUtente = prompt("Inserisci un numero da 1 a 5")
+
