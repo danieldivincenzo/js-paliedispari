@@ -6,7 +6,8 @@
 // Se il valore della somma corrisponde a ciò che  ha inserito l'utente, questo ha vinto, altrimenti ha perso
 
 const pariDispari = prompt("Decidi se pari o dispari")
-const numeroUtente = prompt("Inserisci un numero da 1 a 5")
+const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"))
+// console.log(pariDispari, numeroUtente)
 
 function getRandomNumber(min, max) {
     const minCeiled = Math.ceil(min)
@@ -15,14 +16,23 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled)
 }
 
-const numeroComputer = getRandomNumber(1, 5)
-const sommaNumeri = numeroUtente + numeroComputer
+const sommaNumeri = numeroUtente + getRandomNumber(1, 5)
+// console.log(numeroComputer, sommaNumeri)
 
 function isEven(num) {
     if (num % 2 === 0) {
-        return true
+        return "pari"
     } else {
-        return false
+        return "dispari"
     }
 }
+
+// console.log(isEven(sommaNumeri))
+
+if (pariDispari === isEven(sommaNumeri)) {
+    console.log("Hai vinto")
+} else {
+    console.log("Hai perso")
+}
+
 
