@@ -8,3 +8,12 @@
 const pariDispari = prompt("Decidi se pari o dispari")
 const numeroUtente = prompt("Inserisci un numero da 1 a 5")
 
+function getRandomNumber(min, max) {
+    const minCeiled = Math.ceil(min)
+    const maxFloored = Math.floor(max)
+
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled)
+}
+
+const numeroComputer = getRandomNumber(1, 5)
+
