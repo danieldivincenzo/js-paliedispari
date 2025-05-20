@@ -16,8 +16,9 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled)
 }
 
-const sommaNumeri = numeroUtente + getRandomNumber(1, 5)
-// console.log(numeroComputer, sommaNumeri)
+const numeroPc = getRandomNumber(1, 5)
+const sommaNumeri = numeroUtente + numeroPc
+// console.log(numeroPc, sommaNumeri)
 
 function isEven(num) {
     if (num % 2 === 0) {
